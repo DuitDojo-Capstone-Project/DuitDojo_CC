@@ -1,12 +1,13 @@
 const asyncHandler = require('express-async-handler')
 
 const Expense = require('../models/expenseModel')
+const User = require('../models/userModel')
 
 // @desc    Get expenses
 // @route   GET /api/expenses
 // @access  Private
 const getExpenses = asyncHandler(async (req, res) => {
-    const expenses = await Expense.find()
+    const expenses = await Expense.find({user: req.user.id})
 
     res.status(200).json(expenses)
 })
@@ -22,7 +23,8 @@ const setExpense = asyncHandler(async (req, res) => {
         tanggal: req.body.tanggal,
         jenisPengeluaran: req.body.jenisPengeluaran,
         dompet: req.body.dompet,
-        note: req.body.note
+        note: req.body.note,
+        user: req.user.id,
     })
 
     res.status(200).json(expense)
@@ -37,6 +39,20 @@ const updateExpense = asyncHandler(async (req, res) => {
     if(!expense){
         res.status(400)
         throw new Error('Expense not found')
+    }
+
+    const user = await User.findById(req.user.id)
+
+    // Check for user
+    if (!user) {
+        res.status(401)
+        throw new Error('User not found')
+    }
+
+    // Make sure the logged in user matches the expense user
+    if (expense.user.toString() !== user.id) {
+        res.status(401)
+        throw new Error('User not authorized')
     }
 
     const updatedExpense = await Expense.findByIdAndUpdate(req.params.id, req.body, {
@@ -57,6 +73,20 @@ const deleteExpense = asyncHandler(async (req, res) => {
         throw new Error('Expense not found')
     }
 
+    const user = await User.findById(req.user.id)
+
+    // Check for user
+    if (!user) {
+        res.status(401)
+        throw new Error('User not found')
+    }
+
+    // Make sure the logged in user matches the expense user
+    if (expense.user.toString() !== user.id) {
+        res.status(401)
+        throw new Error('User not authorized')
+    }
+
     await expense.deleteOne()
 
     res.status(200).json({id: req.params.id})
@@ -66,5 +96,5 @@ module.exports = {
     getExpenses,
     setExpense,
     updateExpense, 
-    deleteExpense
+    deleteExpense,
 }
