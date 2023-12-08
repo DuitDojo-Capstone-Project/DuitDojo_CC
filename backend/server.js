@@ -12,6 +12,11 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
+app.get('/', (req, res) => {
+    res.json('message: DuitDojo API is here!!!');
+    res.status(200);
+});
+
 app.use('/api/expenses', require('./routes/expenseRoutes'))
 app.use('/api/users', require('./routes/userRoutes'))
 
