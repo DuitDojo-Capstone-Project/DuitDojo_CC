@@ -1,1 +1,1 @@
-*****DuitDojo_CC*****
+**The Documentation from Cloud Computing Learning Path**
