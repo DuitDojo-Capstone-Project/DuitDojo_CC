@@ -14,6 +14,11 @@ const registerUser = asyncHandler(async (req, res) => {
     throw new Error('Please add all fields')
   }
 
+  if (password !== reconfirmPassword) {
+    res.status(400)
+    throw new Error('Passwords do not match')
+  }
+
   // Check if user exists
   const userExists = await User.findOne({ email })
 
@@ -31,7 +36,7 @@ const registerUser = asyncHandler(async (req, res) => {
     username,
     email,
     password: hashedPassword,
-    // reconfirmPassword: hashedPassword,
+    reconfirmPassword,
   })
 
   if (user) {
