@@ -1,16 +1,16 @@
 const mongoose = require('mongoose')
 
-const expenseSchema = mongoose.Schema({
+const incomeSchema = mongoose.Schema({
     user:{
         type: mongoose.Schema.Types.ObjectId, 
         required: true, 
         ref: 'User'
     },
-    namaPengeluaran: {
+    namaPemasukan: {
         type: String,
-        required: [true, "Please enter a expense name"]
+        required: [true, "Please enter a income name"]
     },
-    besarPengeluaran: {
+    besarPemasukan: {
         type: Number,
         required: true,
         default: 0
@@ -19,10 +19,10 @@ const expenseSchema = mongoose.Schema({
         type: Date,
         required: true
     },
-    jenisPengeluaran: {
+    jenisPemasukan: {
         type: [String], 
         required: true,
-        enum: ['Makanan', 'Belanja', 'Transportasi', 'Hiburan', 'Tagihan', 'Lainnya']
+        enum: ['Gaji', 'Bonus', 'Investasi', 'Jualan', 'Hadiah', 'Lainnya']
     },
     dompet: {
         type: [String], 
@@ -39,4 +39,4 @@ const expenseSchema = mongoose.Schema({
     }
 )
 
-module.exports = mongoose.model('Expense', expenseSchema)
+module.exports = mongoose.model('Income', incomeSchema)

@@ -17,8 +17,9 @@ app.get('/', (req, res) => {
     res.status(200);
 });
 
-app.use('/api/expenses', require('./routes/expenseRoutes'))
 app.use('/api/users', require('./routes/userRoutes'))
+app.use('/api/expenses', require('./routes/expenseRoutes'))
+app.use('/api/incomes', require('./routes/incomeRoutes'))
 
 app.use(errorHandler)
 
