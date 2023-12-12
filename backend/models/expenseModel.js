@@ -22,7 +22,7 @@ const expenseSchema = mongoose.Schema({
     jenisPengeluaran: {
         type: [String], 
         required: true,
-        enum: ['Makanan', 'Belanja', 'Transportasi', 'Hiburan', 'Tagihan', 'Lainnya']
+        enum: ['Food & Drinks', 'Clothing', 'Utilities', 'Electronic', 'Others']
     },
     dompet: {
         type: [String], 
