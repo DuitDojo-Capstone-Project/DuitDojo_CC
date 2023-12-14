@@ -23,4 +23,7 @@ app.use('/api/incomes', require('./routes/incomeRoutes'))
 
 app.use(errorHandler)
 
-app.listen(port, () => console.log(`Server started on port ${port}`))
+// app.listen(port, () => console.log(`Server started on port ${port}`))
+app.listen(process.env.PORT || 4000, function () {
+    console.log("Ready to GO!");
+});
