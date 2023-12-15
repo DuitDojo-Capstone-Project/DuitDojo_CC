@@ -22,7 +22,7 @@ const incomeSchema = mongoose.Schema({
     jenisPemasukan: {
         type: [String], 
         required: true,
-        enum: ['Gaji', 'Bonus', 'Investasi', 'Jualan', 'Hadiah', 'Lainnya']
+        enum: ['Salary', 'Bonus', 'Investment', 'Selling', 'Gift', 'Others']
     },
     dompet: {
         type: [String], 
