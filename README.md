@@ -56,7 +56,7 @@
 
 ## User Incomes
 - Method: POST, GET, PUT, DELETE
-- Url: /api/incomes/expenses/
+- Url: /api/incomes/
 - Header: Bearer token
 ```json
 {
