@@ -47,7 +47,7 @@
 	"besarPengeluaran": "Number",
 	"tanggal": "Date",
 	"jenisPengeluaran": "[String]", 
-	"dompet": "String", 
+	"dompet": "[String]", 
 	"note": "String"
 }
 ```
@@ -62,7 +62,7 @@
 	"besarPemasukan": "Number",
 	"tanggal": "Date",
 	"jenisPemasukan": "[String]", 
-	"dompet": "String", 
+	"dompet": "[String]", 
 	"note": "String"
 }
 ```
