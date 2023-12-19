@@ -52,6 +52,8 @@
 }
 ```
 
+<br>
+
 ## User Incomes
 - Method: POST, GET, PUT, DELETE
 - Url: /api/incomes/expenses/
