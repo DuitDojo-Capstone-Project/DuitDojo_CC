@@ -1,5 +1,5 @@
 # Description
-<p>For the backend API, we use <b>express js</b> to make the endpoint. We try to make endpoint that deployed on the <b>cloud function</b>. For the database, we use <b>mongoDB</b> cloud to store the database like the users, user expenses, and user incomes.</p>
+<p>To ensure a secure, scalable, and cost-efficient backend, we propose utilizing a proven technology stack: Express.js for rapid API development, cloud functions for seamless deployment and resource optimization, and MongoDB Cloud for flexible database management, ensuring secure and efficient storage and retrieval of user data, including expenses and incomes.</p>
 
 # Documentation
 
