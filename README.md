@@ -66,12 +66,17 @@
 }
 ```
 
+<br>
+
 ## Scan Receipt
 - Method: POST
 - Url: /donut/
 - Body: multipart/form-data
 
+<br><br>
+
 # Cloud Architecture Design
 <p>In our Cloud Architecture Design, we leverage Cloud Function and Cloud Run for deploying APIs. Specifically, we employ Express.js for the local server in Cloud Function and Flask for the local server in Cloud Run.</p>
-![Cloud Architecture Design](Cloud-Architecture-Design.png) 
+<br>
+![Cloud Architecture Design](Cloud-Architecture-Design.png)
 
