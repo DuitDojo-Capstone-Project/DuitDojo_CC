@@ -78,26 +78,27 @@
 # Cloud Architecture Design
 <p>In our Cloud Architecture Design, we leverage Cloud Function and Cloud Run for deploying APIs. Specifically, we employ Express.js for the local server in Cloud Function and Flask for the local server in Cloud Run.</p>
 
+<br>
 
 # How to run this API on your local machine 
 To launch the API Server on your local machine, follow these steps:
-1.  Clone the Repository. 
+1.  Clone the Repository. <br>
 	Clone the repository using the following command:
 	```
 	git clone https://github.com/DuitDojo-Capstone-Project/DuitDojo_CC.git
 	```
 2.  Navigate to the Project's Root Directory
-3.  Set Up Environment Variables
+3.  Set Up Environment Variables <br>
 	Create a .env file to configure the port, MongoDB URI, and JWT secret for the application.
-4.  Install Dependencies
+4.  Install Dependencies <br>
 	Execute the command below in your terminal to install all necessary dependencies:
 	```
 	npm install
 	```
-5.  Start the Server in Development Mode
+5.  Start the Server in Development Mode <br>
 	Initiate the server in development mode using:
 	```
 	npm run server
 	```
-6.  Access the Server
+6.  Access the Server <br>
 	The server will be running on the specified port as set up in your environment variables.
