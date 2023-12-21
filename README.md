@@ -80,7 +80,7 @@
 
 <br>
 
-# How to run this API on your local machine 
+# How to Running the API Locally 
 To launch the API Server on your local machine, follow these steps:
 1.  Clone the Repository. <br>
 	Clone the repository using the following command:
