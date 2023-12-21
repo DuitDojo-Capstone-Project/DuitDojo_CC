@@ -73,10 +73,9 @@
 - Url: /donut/
 - Body: multipart/form-data
 
-<br><br>
+<br>
 
 # Cloud Architecture Design
 <p>In our Cloud Architecture Design, we leverage Cloud Function and Cloud Run for deploying APIs. Specifically, we employ Express.js for the local server in Cloud Function and Flask for the local server in Cloud Run.</p>
-<br>
-![Cloud Architecture Design](Cloud-Architecture-Design.png)
+![CloudArchitectureDesign](Chttps://github.com/DuitDojo-Capstone-Project/DuitDojo_CC/blob/master/Cloud-Architecture-Design.png)
 
