@@ -80,8 +80,8 @@
 
 <br>
 
-# How to Running the API Locally 
-To launch the API Server on your local machine, follow these steps:
+# How to Running the Backend API Locally 
+To launch the Backend API on your local machine, follow these steps:
 1.  Clone the Repository. <br>
 	Clone the repository using the following command:
 	```
@@ -102,3 +102,36 @@ To launch the API Server on your local machine, follow these steps:
 	```
 6.  Access the Server <br>
 	The server will be running on the specified port as set up in your environment variables.
+
+<br>
+
+# How to Running the ML API Locally 
+To launch the ML API on your local machine, follow these steps:
+1.  Clone the Repository. <br>
+	Clone the repository using the following command:
+	```
+	git clone https://github.com/DuitDojo-Capstone-Project/DuitDojo_CC.git
+	```
+2.  Navigate to the Project's Root Directory
+3. 	Create an Environment <br>
+	Create a project folder and a .venv folder within:
+	```
+	py -3 -m venv .venv
+	```
+4. 	Activate the Environment <br>
+	Before you work on your project, activate the corresponding environment:
+	```
+	.venv\Scripts\activate
+	```
+5. 	Install Dependencies <br>
+	In your terminal, install the necessary dependencies using:
+	```
+	pip install --no-cache-dir -r requirements.txt
+	```
+6. 	Start the Server <br>
+	To launch the server, type the following command in your terminal:
+	```
+	flask run
+	```
+7. 	Access the Server
+	Once the server is running, access it at http://127.0.0.1:5000/.
