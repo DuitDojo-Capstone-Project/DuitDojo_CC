@@ -1,12 +1,11 @@
 # Description
-<p>For the backend API, we use <b>express js</b> to make the endpoint. We try to make endpoint that deployed on the <b>cloud function</b>. For the database, we use <b>mongoDB</b> cloud to store the database like the users, user expenses, and user incomes.</p>
+<p>To ensure a secure, scalable, and cost-efficient backend, we propose utilizing a proven technology stack: Express.js for rapid API development, cloud functions for seamless deployment and resource optimization, and MongoDB Cloud for flexible database management, ensuring secure and efficient storage and retrieval of user data, including expenses and incomes.</p>
 
 # Documentation
 
 ## Users
 
 ### Register
-
 - Method: POST
 - Url: /api/users/
 ```json
@@ -19,7 +18,6 @@
 ```
 
 ### Login
-
 - Method: POST
 - Url: /api/users/login
 ```json
@@ -30,7 +28,6 @@
 ```
 
 ### Get User
-
 - Method: GET
 - Url: /api/users/me?
 - Header: Bearer token
@@ -68,3 +65,12 @@
 	"note": "String"
 }
 ```
+
+## Scan Receipt
+- Method: POST
+- Url: /donut/
+- Body: multipart/form-data
+
+# Cloud Architecture Design
+<p>In our Cloud Architecture Design, we leverage Cloud Function and Cloud Run for deploying APIs. Specifically, we employ Express.js for the local server in Cloud Function and Flask for the local server in Cloud Run.</p>
+![Cloud Architecture Design](https://drive.google.com/file/d/1Ms9GAc8tA5NSJn_iWdWu2m58BiOnhRil/view?usp=sharing) 
