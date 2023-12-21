@@ -77,4 +77,5 @@
 
 # Cloud Architecture Design
 <p>In our Cloud Architecture Design, we leverage Cloud Function and Cloud Run for deploying APIs. Specifically, we employ Express.js for the local server in Cloud Function and Flask for the local server in Cloud Run.</p>
-![Architecture Cloud Run](https://storage.googleapis.com/budayai-datasets/FlaskApp.png)
+![CloudArchitectureDesign](https://github.com/DuitDojo-Capstone-Project/DuitDojo_CC/blob/master/Cloud-Architecture-Design.png)
+
