@@ -1,0 +1,28 @@
+{
+  "menu": [
+      {
+          "category": "food",
+          "nm": "Woman"
+      },
+      {
+          "category": "food",
+          "nm": "Ham Cheese"
+      },
+      {
+          "category": "food",
+          "nm": "Ice Java Tea"
+      },
+      {
+          "category": "food",
+          "nm": "Mineral Water"
+      },
+      {
+          "category": "electronic",
+          "nm": "Black & White"
+      }
+  ],
+  "status": {
+      "code": 200,
+      "message": "Success predicting"
+  }
+}
